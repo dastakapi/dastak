@@ -14,4 +14,17 @@ service / on new http:Listener(9090) {
         }
         return "Hello, " + name;
     }
+
+    resource function post auth/token(string grant_type, string ClientID, string ClientSecret, string scope) returns AuthResponse|error? {
+        AuthResponse auth = {"access_token":"dsdf","expires_in":3432432,"token_type":"Bearer","scope":scope};
+        return auth ;
+    }
 }
+
+public type AuthResponse record {|
+    string access_token;
+    decimal expires_in;
+    string token_type;
+    string scope;
+|};
+
