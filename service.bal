@@ -31,6 +31,62 @@ service / on new http:Listener(9090) {
         return response;
     }
 
+    resource function get account() returns http:Response {
+        http:Response response = new;
+        return response;
+    }
+
+    resource function get account_balances() returns http:Response {
+        http:Response response = new;
+        return response;
+    }
+
+    resource function get connections() returns http:Response {
+        http:Response response = new;
+        return response;
+    }
+
+    resource function get connection() returns http:Response {
+        http:Response response = new;
+        return response;
+    }
+
+    resource function delete connection() returns http:Response {
+        http:Response response = new;
+        return response;
+    }
+
+    resource function get consents() returns http:Response {
+        http:Response response = new;
+        return response;
+    }
+
+    resource function get consent() returns http:Response {
+        http:Response response = new;
+        return response;
+    }
+
+    resource function put consent() returns http:Response {
+        http:Response response = new;
+        return response;
+    }
+
+    resource function get institutes() returns http:Response {
+        http:Response response = new;
+        return response;
+    }
+
+    resource function post auth_session() returns http:Response {
+        http:Response response = new;
+        return response;
+    }
+
+    // resource function post auth_session() returns http:Response {
+    //     http:Response response = new;
+    //     return response;
+    // }
+
+
 
 }
 
