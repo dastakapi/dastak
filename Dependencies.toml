@@ -290,14 +290,14 @@ modules = [
 
 [[package]]
 org = "evantagesoftpvt"
-name = "create_an_access_token"
+name = "dastak_api"
 version = "0.1.0"
 dependencies = [
 	{org = "ballerina", name = "http"},
 	{org = "ballerinai", name = "observe"}
 ]
 modules = [
-	{org = "evantagesoftpvt", packageName = "create_an_access_token", moduleName = "create_an_access_token"}
+	{org = "evantagesoftpvt", packageName = "dastak_api", moduleName = "dastak_api"}
 ]
 
 
