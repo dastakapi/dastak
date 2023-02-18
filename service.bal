@@ -21,6 +21,17 @@ service / on new http:Listener(9090) {
         return response;
     }
 
+    resource function get transactions() returns http:Response {
+        http:Response response = new;
+        return response;
+    }
+
+    resource function get accounts() returns http:Response {
+        http:Response response = new;
+        return response;
+    }
+
+
 }
 
 public type AuthResponse record {|
