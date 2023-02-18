@@ -81,10 +81,10 @@ service / on new http:Listener(9090) {
         return response;
     }
 
-    // resource function post auth_session() returns http:Response {
-    //     http:Response response = new;
-    //     return response;
-    // }
+    resource function post test_auth_session() returns http:Response {
+        http:Response response = new;
+        return response;
+    }
 
 
 
