@@ -27,7 +27,7 @@ service / on new http:Listener(9090) {
     }
 
     resource function get accounts() returns http:Response {
-        http:Response response = new;
+        http:Response response = new; 
         return response;
     }
 
@@ -85,9 +85,6 @@ service / on new http:Listener(9090) {
         http:Response response = new;
         return response;
     }
-
-
-
 }
 
 public type AuthResponse record {|
