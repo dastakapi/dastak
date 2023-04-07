@@ -27,7 +27,7 @@ service / on new http:Listener(9090) {
     }
 
     resource function get accounts() returns http:Response {
-        http:Response response = new; 
+        http:Response response = new;
         return response;
     }
 
@@ -93,6 +93,48 @@ service / on new http:Listener(9090) {
 
     resource function get users() returns http:Response {
         http:Response response = new;
+        response.setJsonPayload({
+            "Data": [
+                {
+                    "UserID": "123456789",
+                    "ClientUserIdentifier": "mohsin.termezy@dastak.io",
+                    "Kyc": {
+                        "FirstName": "Mohsin",
+                        "LastName": "Termezy",
+                        "OwnershipModel": "own",
+                        "DateOfBirth": "1987-01-01",
+                        "PlaceOfBirth": "Lahore",
+                        "Gender": "male",
+                        "Citizenship": "PK",
+                        "ResidenceAddress": "Lahore , Pakistan",
+                        "BusinessLegalName": "Dastak Accelerator",
+                        "BusinessRegisteredOfficeCode": "PK",
+                        "BusinessRegisteredOfficeAddress": "Lahore, Pakistan",
+                        "BusinessRegistrationNumber": "254900FJRUPF31M3OT81"
+                    },
+                    "BlockedAt": null
+                },
+                {
+                    "UserID": "987654321",
+                    "ClientUserIdentifier": "arshad.quayyum@dastak.io",
+                    "Kyc": {
+                        "FirstName": "Arshad",
+                        "LastName": "Quayyum",
+                        "OwnershipModel": "own",
+                        "DateOfBirth": "1985-02-01",
+                        "PlaceOfBirth": "Karachi",
+                        "Gender": "male",
+                        "Citizenship": "PK",
+                        "ResidenceAddress": "Karachi, Pakistan",
+                        "BusinessLegalName": "Dastak Accelerator",
+                        "BusinessRegisteredOfficeCode": "PK",
+                        "BusinessRegisteredOfficeAddress": "Karachi, Pakistan",
+                        "BusinessRegistrationNumber": "254900FJRUPF31M3OT84"
+                    },
+                    "BlockedAt": "2022-08-16T09:43:01Z"
+                }
+            ]
+        }, "appplicaion/json");
         return response;
     }
 
