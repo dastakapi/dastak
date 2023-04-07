@@ -71,7 +71,7 @@ service / on new http:Listener(9090) {
         return response;
     }
 
-    resource function get institutes() returns http:Response {
+    resource function get institutions() returns http:Response {
         http:Response response = new;
         return response;
     }
@@ -85,6 +85,28 @@ service / on new http:Listener(9090) {
         http:Response response = new;
         return response;
     }
+
+    resource function post users() returns http:Response {
+        http:Response response = new;
+        return response;
+    }
+
+    resource function get users() returns http:Response {
+        http:Response response = new;
+        return response;
+    }
+
+    resource function get user(string user_id) returns http:Response {
+        http:Response response = new;
+        return response;
+    }
+
+    resource function delete user(string user_id) returns http:Response {
+        http:Response response = new;
+        return response;
+    }
+
+
 }
 
 public type AuthResponse record {|
