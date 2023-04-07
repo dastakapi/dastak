@@ -606,6 +606,12 @@ service / on new http:Listener(9090) {
         return response;
     }
 
+    resource function get user_detauls(string user_id) returns http:Response {
+        http:Response response = new;
+        return response;
+    }
+
+
     resource function delete user(string user_id) returns http:Response {
         http:Response response = new;
         return response;
