@@ -252,6 +252,7 @@ service / on new http:Listener(9090) {
             ]
         }, "application/json");
         return response;
+        
     }
 
     resource function get connections(string userId, int page, int page_limit) returns http:Response {
